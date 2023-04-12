@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #c5e4e7;
+}
+header img {
+  width: 86.66px;
+  height: 53.14px;
+  margin-top: 50px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.splitter-body {
+  margin-top: 41px;
+  padding: 32px;
+  background: #ffffff;
+  box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+  border-radius: 25px 25px 0px 0px;
+}
+
+.splitter-input {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.h-error {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.error {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #e17457;
+  display: none;
+}
+
+label,
+h2 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5e7a7d;
+}
+
+.input-box-two > h2 {
+  margin-bottom: 16px;
+}
+
+input[type="number"] {
+  background-color: #f3f9fa;
+  border-radius: 5px;
+  width: 100%;
+  height: 48px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: right;
+  color: #00474b;
+  border: transparent;
+}
+
+#bill,
+#people {
+  background-color: rgba(243, 249, 250, 1);
+  background-image: url("./images/$.png");
+  background-position: 5px 5px;
+  background-repeat: no-repeat;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: right;
+  color: #00474b;
+  mix-blend-mode: normal;
+}
+
+.input-tip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 16px;
+}
+.tip-enter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 47%;
+}
+
+.tip-enter button {
+  background: #00474b;
+  border-radius: 5px;
+  height: 48px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  border: transparent;
+}
+#custom {
+  text-align: center;
+}
+
+input[type="radio"] {
+  appearance: none;
+}
+
+#people {
+  background-image: url("./images/icon-person.svg");
+  background-position: 5px 5px;
+  background-repeat: no-repeat;
+}
+
+.splitter-output {
+  background: #00474b;
+  border-radius: 15px;
+  padding: 39px 24px 24px 24px;
+  margin-top: 32px;
+}
+
+h1 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.output-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.output-text > span {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+  color: #7f9d9f;
+}
+
+#tipAmount,
+#total {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 47px;
+  text-align: right;
+  letter-spacing: -0.666667px;
+  color: #26c2ae;
+}
+
+#reset {
+  background: #0d686d;
+  border-radius: 5px;
+  width: 100%;
+  height: 48px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #00474b;
+  border: transparent;
+}

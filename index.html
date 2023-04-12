@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="logo" />
+    </header>
+    <main>
+      <div class="splitter-body">
+        <div class="splitter-input">
+          <div class="input-box-one">
+            <div class="h-error">
+              <label for="bill">Bill</label>
+              <span class="error">Can't be zero</span>
+            </div>
+            <div class="input-enter">
+              <input type="number" id="bill" placeholder="0.00" min="0 " />
+            </div>
+          </div>
+          <div class="input-box-two">
+            <h2>Select Tip %</h2>
+            <div class="input-tip">
+              <div class="tip-enter">
+                <input type="radio" name="tip" id="5" value="0.05" />
+                <button>5%</button>
+              </div>
+              <div class="tip-enter">
+                <input type="radio" name="tip" id="10" value="0.1" />
+                <button>10%</button>
+              </div>
+              <div class="tip-enter">
+                <input type="radio" name="tip" id="15" value="0.15" />
+                <button>15%</button>
+              </div>
+              <div class="tip-enter">
+                <input type="radio" name="tip" id="25" value="0.25" />
+                <button>25%</button>
+              </div>
+              <div class="tip-enter">
+                <input type="radio" name="tip" id="50" value="0.5" />
+                <button>50%</button>
+              </div>
+              <div class="tip-enter" id="tip-custom">
+                <input
+                  type="number"
+                  name="tip"
+                  id="custom"
+                  placeholder="Custom"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="input-box-three">
+            <div class="h-error">
+              <label for="people">Number of People</label>
+              <span class="error">Can't be zero</span>
+            </div>
+            <input type="number" id="people" placeholder="0" min="0" />
+          </div>
+        </div>
+        <div class="splitter-output">
+          <div class="output-box">
+            <div class="output-text">
+              <h1>Tip amount</h1>
+              <span>/person</span>
+            </div>
+            <div class="output-result">
+              <h1 id="tipAmount">$0.00</h1>
+            </div>
+          </div>
+          <div class="output-box">
+            <div class="output-text">
+              <h1>Total</h1>
+              <span>/person</span>
+            </div>
+            <div class="output-result">
+              <h1 id="total">$0.00</h1>
+            </div>
+          </div>
+          <button id="reset">RESET</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
