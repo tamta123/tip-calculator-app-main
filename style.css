@@ -41,7 +41,8 @@ header img {
   display: none;
 }
 
-label,
+.bill,
+.people,
 h2 {
   font-family: "Space Mono";
   font-style: normal;
@@ -68,13 +69,14 @@ input[type="number"] {
   text-align: right;
   color: #00474b;
   border: transparent;
+  cursor: pointer;
 }
 
 #bill,
 #people {
   background-color: rgba(243, 249, 250, 1);
   background-image: url("./images/$.png");
-  background-position: 5px 5px;
+  background-position: 10px 15px;
   background-repeat: no-repeat;
   font-family: "Space Mono";
   font-style: normal;
@@ -86,6 +88,15 @@ input[type="number"] {
   mix-blend-mode: normal;
 }
 
+/* #people:hover {
+  border: 2px solid #26c2ae;
+  border-radius: 5px;
+}
+#bill:hover {
+  border: 2px solid #26c2ae;
+  border-radius: 5px;
+} */
+
 .input-tip {
   display: flex;
   align-items: center;
@@ -93,15 +104,39 @@ input[type="number"] {
   width: 100%;
   gap: 16px;
 }
-.tip-enter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 47%;
+
+.tip-enter label,
+.tip-enter input {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.tip-enter button {
+.tip-enter {
+  position: relative;
+  width: 47.4%;
+  z-index: 90;
+}
+
+.tip-enter input[type="radio"] {
+  opacity: 0.01;
+  z-index: 100;
+}
+
+.tip-enter input[type="radio"]:checked + label,
+.Checked + label {
+  background: rgba(159, 232, 223, 1);
+}
+
+.tip-enter label {
+  padding: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  z-index: 90;
+  position: relative;
   background: #00474b;
   border-radius: 5px;
   height: 48px;
@@ -114,19 +149,18 @@ input[type="number"] {
   color: #ffffff;
   width: 100%;
   border: transparent;
-}
-#custom {
-  text-align: center;
+  cursor: pointer;
+  z-index: 90;
 }
 
-input[type="radio"] {
-  appearance: none;
+#custom {
+  top: -24px;
+  text-align: center;
+  cursor: pointer;
 }
 
 #people {
   background-image: url("./images/icon-person.svg");
-  background-position: 5px 5px;
-  background-repeat: no-repeat;
 }
 
 .splitter-output {
@@ -186,4 +220,9 @@ h1 {
   text-align: center;
   color: #00474b;
   border: transparent;
+  cursor: pointer;
 }
+/* 
+#reset:hover {
+  background-color: #9fe8df;
+} */
