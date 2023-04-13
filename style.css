@@ -118,8 +118,7 @@ input[type="number"] {
   z-index: 100;
 }
 
-.tip-enter input[type="radio"]:checked + label,
-.Checked + label {
+.tip-enter input[type="radio"]:checked + label {
   background: rgba(159, 232, 223, 1);
 }
 
