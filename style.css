@@ -66,6 +66,7 @@ input[type="number"] {
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
+  padding-right: 17px;
   text-align: right;
   color: #00474b;
   border: transparent;
@@ -87,15 +88,6 @@ input[type="number"] {
   color: #00474b;
   mix-blend-mode: normal;
 }
-
-/* #people:hover {
-  border: 2px solid #26c2ae;
-  border-radius: 5px;
-}
-#bill:hover {
-  border: 2px solid #26c2ae;
-  border-radius: 5px;
-} */
 
 .input-tip {
   display: flex;
@@ -222,7 +214,31 @@ h1 {
   border: transparent;
   cursor: pointer;
 }
-/* 
-#reset:hover {
-  background-color: #9fe8df;
-} */
+
+@media screen and (min-width: 1440px) {
+  header img {
+    margin-top: 163px;
+  }
+
+  .splitter-body {
+    margin: 88px 260px 239px 260px;
+    border-radius: 25px;
+    display: flex;
+    gap: 48px;
+  }
+
+  .splitter-input {
+    width: 50%;
+  }
+  .splitter-output {
+    width: 50%;
+    padding: 40px 56px 40px 40px;
+    margin-top: 0px;
+  }
+  .splitter-output .output-box {
+    padding-bottom: 53px;
+  }
+  #reset {
+    margin-top: 81px;
+  }
+}

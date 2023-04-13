@@ -60,6 +60,10 @@ function reset() {
     totalOutput.innerHTML = `$0.00`;
     tipInput.forEach(button => button.checked = false);
     tipPercent=0
+    resetButton.style.backgroundColor = "#9FE8DF";
+  setTimeout(() => {
+    resetButton.style.backgroundColor = "#0D686D"; 
+  }, 100);
   }
 
 
